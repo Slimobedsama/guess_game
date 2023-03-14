@@ -3,3 +3,13 @@ h1 {
     text-decoration: underline;
     color: #333;
 }
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content {
+    height: 500px;
+    width: 50%;
+    border: 1px solid #333;
+}
