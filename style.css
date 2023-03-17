@@ -13,3 +13,12 @@ div.content {
     width: 50%;
     border: 1px solid #333;
 }
+div .sub-content {
+    height: 33.3%;
+}
+div .sub-content-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
