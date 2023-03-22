@@ -13,16 +13,20 @@
         <div class="content">
             <div class="sub-content sub-content-1">
                 <p class="msg"></p>
-                <label for="figure">Choose A Number Between 1 & 100</label><br>
-                <input type="number" name="figure" id="figure" autofocus>
+                <label for="figure">Make A Guess Between 1 & 100</label><br>
+                <input type="number" name="figure" id="figure" min="1" max="100" autofocus>
             </div>
             <div class="sub-content sub-content-2">
-                <p class="display-1"></p>
-                <p class="display-2"></p>
+                <p class="current-dis-1"></p>
+                <p class="current-dis-2"></p>
             </div>
             <div class="sub-content sub-content-3">
+                <p class="previous-dis-1"></p>
+                <p class="previous-dis-2"></p>
+            </div>
+            <div class="sub-content sub-content-4">
                 <input type="button" value="Enter">
-                <input type="reset" value="Clear" onclick="resetInput()">
+                <input type="reset" value="Clear">
             </div>
         </div>
     </div>
