@@ -26,3 +26,11 @@ div .sub-content-1 {
     justify-content: center;
     gap: 5px;
 }
+div .sub-content-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div input[type="button"] {
+    margin: 0 10px;
+}
