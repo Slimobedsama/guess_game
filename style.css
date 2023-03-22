@@ -26,11 +26,21 @@ div .sub-content-1 {
     justify-content: center;
     gap: 5px;
 }
+/* div .sub-content-2 {
+
+} */
 div .sub-content-4 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-div input[type="button"] {
+div .sub-content-4 input[type="button"] {
     margin: 0 10px;
+    background-color: #474444;
+    color: #ece4e4;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
 }
