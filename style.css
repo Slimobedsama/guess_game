@@ -17,7 +17,7 @@ div.content {
     border: 2px solid #333;
 }
 div .sub-content {
-    height: 33.3%;
+    height: 25%;
 }
 div .sub-content-1 {
     display: flex;
