@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 h1 {
     text-align: center;
     text-decoration: underline;
@@ -11,7 +14,7 @@ h1 {
 div.content {
     height: 500px;
     width: 50%;
-    border: 1px solid #333;
+    border: 2px solid #333;
 }
 div .sub-content {
     height: 33.3%;
