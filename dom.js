@@ -1,3 +1,4 @@
+//DOM QUERY
 const content = document.querySelector('div .content');
 const msg = document.querySelector('p .msg');
 const dataInput = document.querySelector('#figure');
@@ -7,3 +8,5 @@ const previousRandomNum = document.querySelector('.previous-dis-1');
 const previousGuess = document.querySelector('.previous-dis-2');
 const enterButton = document.querySelector('div input[value="Enter"]');
 const clearButton = document.querySelector('div input[value="Clear"]');
+// THIS DEFINES THE RANDOM NUMBER
+const randomNum = Math.floor(Math.random() * 100) + 1;
