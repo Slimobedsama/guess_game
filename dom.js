@@ -29,5 +29,12 @@ function playGame() {
     gameRound++;
 }
 
+function clearInput() {
+    if(dataInput.value !== '') {
+        dataInput.value = '';
+    }
+}
 // ENTER BUTTON EVENT LISTENER
 enterButton.addEventListener('click', playGame);
+// CLEAR BUTTON EVENT LISTENER
+clearButton.addEventListener('click', clearInput);
