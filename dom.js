@@ -18,6 +18,15 @@ function playGame() {
     const randomNum = Math.floor(Math.random() * 100) + 1;
     currentRandom.textContent = `Current Random Number: ${randomNum}`;
     currentGuess.textContent = `Current Guess: ${dataInput.value}`;
+    // CHECKS THE GAME PLAY ROUND IF IT IS THE FIRST ROUND
+    if(gameRound === 1) {
+        previousRandomNum.textContent = 'Previous Random Numbers: ';
+        previousGuess.textContent = 'Previous Guesses: ';
+    }
+    // APPENDS THE CURRENT ROUND TO THE PREVIOUS ROUND
+    previousRandomNum.textContent += `${randomNum} `;
+    previousGuess.textContent += `${dataInput.value}, `;
+    gameRound++;
 }
 
 // ENTER BUTTON EVENT LISTENER

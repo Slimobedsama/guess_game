@@ -27,9 +27,11 @@ div .sub-content-1 {
     justify-content: center;
     gap: 5px;
 }
-/* div .sub-content-2 {
-
-} */
+div .sub-content-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 div .sub-content-4 {
     display: flex;
     justify-content: center;
