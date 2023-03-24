@@ -10,3 +10,14 @@ const enterButton = document.querySelector('div input[value="Enter"]');
 const clearButton = document.querySelector('div input[value="Clear"]');
 // THIS DEFINES THE RANDOM NUMBER
 const randomNum = Math.floor(Math.random() * 100) + 1;
+// SETTING THE GAME PLAY ROUNDS COUNT
+let gameRound = 1;
+
+// CREATING THE GAME PLAY FUNCTION
+function playGame() {
+    currentRandom.textContent = `Current Random Number: ${randomNum}`;
+    currentGuess.textContent = `Current Guess: ${dataInput.value}`;
+}
+
+// ENTER BUTTON EVENT LISTENER
+enterButton.addEventListener('click', playGame);
