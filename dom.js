@@ -30,6 +30,7 @@ function playGame() {
     if(dataInput.value == randomNum) {
         msg.innerHTML = 'HURRAY! YOUR GUESS IS CORRECT';
         content.style.backgroundColor = '#00ff00';
+        gameOver();
     } else if(dataInput.value > randomNum) {
         msg.innerHTML = 'YOUR GUESS IS ABOVE THE RANDOM NUMBER';
         content.style.backgroundColor = '#ff0000';
@@ -39,6 +40,10 @@ function playGame() {
         msg.innerHTML = 'YOUR GUESS IS BELOW THE RANDOM NUMBER';
         content.style.backgroundColor = '#ffd700';
         checkInput();
+    }
+    if(gameRound === 10) {
+        msg.textContent = 'GAME OVER';
+        gameOver();
     }
     dataInput.focus();
     gameRound++;
@@ -53,7 +58,7 @@ function checkInput() {
         content.style.backgroundColor = '#fff';
     }
 }
-// 
+// THIS FUNCTION DISABLES THE PLAY GAME FUNCTION
 function gameOver() {
     dataInput.disabled = true;
     enterButton.disabled = true;
