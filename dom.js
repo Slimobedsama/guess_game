@@ -1,6 +1,6 @@
 //QUERIES THE DOM 
-const content = document.querySelector('div .content');
-const msg = document.querySelector('p .msg');
+const content = document.querySelector('.content');
+const msg = document.querySelector('.msg');
 const dataInput = document.querySelector('#figure');
 const currentRandom = document.querySelector('.current-dis-1');
 const currentGuess = document.querySelector('.current-dis-2');
@@ -26,14 +26,31 @@ function playGame() {
     // APPENDS THE CURRENT ROUND TO THE PREVIOUS ROUND
     previousRandomNum.textContent += `${randomNum} `;
     previousGuess.textContent += `${dataInput.value} `;
+
+    if(dataInput.value == randomNum) {
+        msg.innerHTML = 'HURRAY! YOUR GUESS IS CORRECT';
+        content.style.backgroundColor = '#00ff00';
+    } else if(dataInput.value > randomNum) {
+        msg.innerHTML = 'YOUR GUESS IS ABOVE THE RANDOM NUMBER';
+        content.style.backgroundColor = '#ff0000';
+        checkInput();
+        
+    } else if(dataInput.value < randomNum) {
+        msg.innerHTML = 'YOUR GUESS IS BELOW THE RANDOM NUMBER';
+        content.style.backgroundColor = '#ffd700';
+        checkInput();
+    }
+    
     gameRound++;
 }
-// THIS FUNCTION CHECKS USER INPUT VALUE
+// THIS FUNCTION VALIDATES USER INPUT VALUE
 function checkInput() {
-    if(dataInput.value === '') {
+    if(dataInput.value == '') {
         msg.textContent = 'Insert A Number';
+        content.style.backgroundColor = '#fff';
     } else if(dataInput.value > 100) {
         msg.textContent = 'Choose A Number Between 1 & 100';
+        content.style.backgroundColor = '#fff';
     }
 }
 
