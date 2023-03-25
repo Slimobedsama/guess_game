@@ -1,6 +1,6 @@
 //QUERIES THE DOM 
-const content = document.querySelector('.content');
-const msg = document.querySelector('.msg');
+const content = document.querySelector('div.content');
+const msg = document.querySelector('p.msg');
 const dataInput = document.querySelector('#figure');
 const currentRandom = document.querySelector('.current-dis-1');
 const currentGuess = document.querySelector('.current-dis-2');
@@ -40,7 +40,7 @@ function playGame() {
         content.style.backgroundColor = '#ffd700';
         checkInput();
     }
-    
+    dataInput.focus();
     gameRound++;
 }
 // THIS FUNCTION VALIDATES USER INPUT VALUE
@@ -53,7 +53,12 @@ function checkInput() {
         content.style.backgroundColor = '#fff';
     }
 }
-
+// 
+function gameOver() {
+    dataInput.disabled = true;
+    enterButton.disabled = true;
+}
+// THIS FUNCTION CLEAR THE INPUT
 function clearInput() {
     if(dataInput.value !== '') {
         dataInput.value = '';
