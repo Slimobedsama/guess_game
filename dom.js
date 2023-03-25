@@ -25,8 +25,16 @@ function playGame() {
     }
     // APPENDS THE CURRENT ROUND TO THE PREVIOUS ROUND
     previousRandomNum.textContent += `${randomNum} `;
-    previousGuess.textContent += `${dataInput.value}, `;
+    previousGuess.textContent += `${dataInput.value} `;
     gameRound++;
+}
+// THIS FUNCTION CHECKS USER INPUT VALUE
+function checkInput() {
+    if(dataInput.value === '') {
+        msg.textContent = 'Insert A Number';
+    } else if(dataInput.value > 100) {
+        msg.textContent = 'Choose A Number Between 1 & 100';
+    }
 }
 
 function clearInput() {
