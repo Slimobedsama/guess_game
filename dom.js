@@ -34,11 +34,13 @@ function playGame() {
     } else if(dataInput.value > randomNum) {
         msg.innerHTML = 'YOUR GUESS IS ABOVE THE RANDOM NUMBER';
         content.style.backgroundColor = '#ff0000';
+        content.style.color = '#ece4e4';
         checkInput();
         
     } else if(dataInput.value < randomNum) {
         msg.innerHTML = 'YOUR GUESS IS BELOW THE RANDOM NUMBER';
         content.style.backgroundColor = '#ffd700';
+        content.style.color = '#130404e8';
         checkInput();
     }
     if(gameRound === 10) {
