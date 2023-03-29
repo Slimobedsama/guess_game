@@ -19,13 +19,15 @@ div.content {
 div .sub-content {
     height: 25%;
 }
+div.msg, .sub-content-2, .sub-content-3 {
+    font-size: 1.1em;
+}
 div .sub-content-1 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
-    gap: 5px;
 }
 div .sub-content-2 {
     display: flex;
