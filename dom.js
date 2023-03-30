@@ -1,5 +1,6 @@
 //QUERIES THE DOM 
 const content = document.querySelector('div.content');
+const subContent4 = document.querySelector('div.sub-content-4');
 const msg = document.querySelector('p.msg');
 const dataInput = document.querySelector('#figure');
 const currentRandom = document.querySelector('.current-dis-1');
@@ -64,6 +65,13 @@ function checkInput() {
 function gameOver() {
     dataInput.disabled = true;
     enterButton.disabled = true;
+    // CREATES THE REPLAY BUTTON
+    const replayBtn = document.createElement('input');
+    replayBtn.setAttribute('type', 'button');
+    replayBtn.setAttribute('value', 'Replay');
+    subContent4.appendChild(replayBtn);
+    // REPLAY BUTTON EVENT LISTENER
+    replayBtn.addEventListener('click',replay);
 }
 // THIS FUNCTION CLEAR THE INPUT
 function clearInput() {
