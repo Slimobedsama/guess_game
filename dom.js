@@ -66,6 +66,8 @@ function checkInput() {
 function gameOver() {
     dataInput.disabled = true;
     enterButton.disabled = true;
+    // REMOVES THE CLEAR BUTTON
+    clearButton.remove();
     // SETS THE ATTRIBUTES OF THE REPLAY BUTTON AND APPENDS IT
     replayBtn.setAttribute('type', 'button');
     replayBtn.setAttribute('value', 'Replay');
@@ -84,8 +86,13 @@ function replayGame() {
     dataInput.value = '';
     // SETS ALL DISPLAY PARAMETERS TO EMPTY
     paras.forEach(para => para.textContent = '');
+    // REMOVES THE REPLAY BUTTON
     replayBtn.remove();
+    content.style.backgroundColor = 'white';
     randomNum = Math.floor(Math.random() * 100) + 1;
+    // APPENDS THE CLEAR BUTTON
+    subContent4.appendChild(clearButton);
+    dataInput.focus();
 }
 // THIS FUNCTION CLEAR THE INPUT
 function clearInput() {
