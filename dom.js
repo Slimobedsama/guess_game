@@ -10,7 +10,7 @@ const previousGuess = document.querySelector('.previous-dis-2');
 const enterButton = document.querySelector('div input[value="Enter"]');
 const clearButton = document.querySelector('div input[value="Clear"]');
 const paras = document.querySelectorAll('div p');
-
+ const replayBtn = document.createElement('input');
 // SETS THE GAME PLAY ROUNDS COUNT
 let gameRound = 1;
 
@@ -66,8 +66,7 @@ function checkInput() {
 function gameOver() {
     dataInput.disabled = true;
     enterButton.disabled = true;
-    // CREATES THE REPLAY BUTTON
-    const replayBtn = document.createElement('input');
+    // SETS THE ATTRIBUTES OF THE REPLAY BUTTON AND APPENDS IT
     replayBtn.setAttribute('type', 'button');
     replayBtn.setAttribute('value', 'Replay');
     subContent4.appendChild(replayBtn);
