@@ -9,6 +9,7 @@ const previousRandomNum = document.querySelector('.previous-dis-1');
 const previousGuess = document.querySelector('.previous-dis-2');
 const enterButton = document.querySelector('div input[value="Enter"]');
 const clearButton = document.querySelector('div input[value="Clear"]');
+const paras = document.querySelectorAll('div p');
 
 // SETS THE GAME PLAY ROUNDS COUNT
 let gameRound = 1;
@@ -71,7 +72,21 @@ function gameOver() {
     replayBtn.setAttribute('value', 'Replay');
     subContent4.appendChild(replayBtn);
     // REPLAY BUTTON EVENT LISTENER
-    replayBtn.addEventListener('click',replay);
+    replayBtn.addEventListener('click',replayGame);
+}
+// THIS FUNCTION CREATES THE REPLAY GAME MODE
+function replayGame() {
+    // RESETS THE GAME PLAY ROUND TO 1
+    gameRound = 1;
+    // ENABLES THE INPUT BOX AND ENTER BUTTON
+    dataInput.disabled = false;
+    enterButton.disabled = false;
+    // SETS THE INPUT TO BE EMPTY
+    dataInput.value = '';
+    // SETS ALL DISPLAY PARAMETERS TO EMPTY
+    paras.forEach(para => para.textContent = '');
+    replayBtn.remove();
+    randomNum = Math.floor(Math.random() * 100) + 1;
 }
 // THIS FUNCTION CLEAR THE INPUT
 function clearInput() {
