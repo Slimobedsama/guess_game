@@ -42,7 +42,7 @@ function playGame() {
     } else if(dataInput.value < randomNum) {
         msg.innerHTML = 'YOUR GUESS IS BELOW THE RANDOM NUMBER';
         content.style.backgroundColor = '#ffd700';
-        content.style.color = '#130404e8';
+        content.style.color = '#000';
         checkInput();
     }
     if(gameRound === 10) {
