@@ -59,6 +59,7 @@ function checkInput() {
         content.style.backgroundColor = '#fff';
     } else if(dataInput.value > 100) {
         msg.textContent = 'Choose A Number Between 1 & 100';
+        content.style.color = '#000';
         content.style.backgroundColor = '#fff';
     }
 }
