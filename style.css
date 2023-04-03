@@ -55,6 +55,12 @@ div .sub-content-4 input[type="button"] {
     border-radius: 5px;
     cursor: pointer;
 }
+div .sub-content-1 input:focus {
+    background-color: #00ffff;
+}
+div .sub-content-1 input:disabled {
+    background-color: #8B0000;
+}
 /* MEDIA QUERY */
 @media (max-width:480px) and (min-width: 320px) {
     div.content {
