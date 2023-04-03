@@ -55,3 +55,7 @@ div .sub-content-4 input[type="button"] {
     border-radius: 5px;
     cursor: pointer;
 }
+/* MEDIA QUERY */
+@media (max-width:480px) and (min-width: 320px) {
+    
+}
