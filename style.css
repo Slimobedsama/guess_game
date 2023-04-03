@@ -64,7 +64,7 @@ div .sub-content-1 input:disabled {
 /* MEDIA QUERY */
 @media (max-width:480px) and (min-width: 320px) {
     div.content {
-        height: 350px;
+        height: 310px;
         width: 100%;
     }
     div .sub-content-4 input[type="button"] {
