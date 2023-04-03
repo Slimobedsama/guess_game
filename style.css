@@ -6,6 +6,9 @@ h1 {
     text-decoration: underline;
     color: #333;
 }
+p.intro-msg {
+    font-weight: 600;
+}
 .main-content {
     display: flex;
     justify-content: center;
