@@ -46,7 +46,7 @@ div .sub-content-4 {
     align-items: center;
 }
 div .sub-content-4 input[type="button"] {
-    margin: 0 10px;
+    margin: 0 5px;
     background-color: #474444;
     color: #ece4e4;
     font-size: 1em;
@@ -57,5 +57,12 @@ div .sub-content-4 input[type="button"] {
 }
 /* MEDIA QUERY */
 @media (max-width:480px) and (min-width: 320px) {
-    
+    div.content {
+        height: 350px;
+        width: 100%;
+    }
+    div .sub-content-4 input[type="button"] {
+        padding: 5px;
+        font-size: 0.9em;
+    }
 }
