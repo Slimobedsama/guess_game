@@ -15,8 +15,8 @@ p.intro-msg {
     align-items: center;
 }
 div.content {
-    height: 500px;
-    width: 50%;
+    min-height: 350px;
+    max-width: 400px;
     border: 2px solid #333;
 }
 div .sub-content {
@@ -63,15 +63,4 @@ div .sub-content-1 input:focus {
 }
 div .sub-content-1 input:disabled {
     background-color: #8B0000;
-}
-/* MEDIA QUERY */
-@media (max-width:480px) and (min-width: 320px) {
-    div.content {
-        height: 310px;
-        width: 100%;
-    }
-    div .sub-content-4 input[type="button"] {
-        padding: 5px;
-        font-size: 0.9em;
-    }
 }
